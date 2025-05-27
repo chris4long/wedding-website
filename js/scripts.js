@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Dan and Emma's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Jun 13, 2026 14:45'),
 
             // Event duration (IN MINUTES)
-            // duration: 120,
+            // duration: 600,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Park Mill Farm, Kingswood, Bristol, BS15 4NJ, United Kingdom',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Dan Long on xxxxx, or the Best Man - Ben ."
         }
     });
 
@@ -214,8 +214,8 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== '545c2047a6dd50e46a60a28c51eb9aee'
+            && MD5($('#invite_code').val()) !== '545c2047a6dd50e46a60a28c51eb9aee') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycby-mpd6uCNdw3Fevb3zRzstHcGoJq3UOgOtHIcZ95RPzgNB66GSSnyFT7Nzt2NpkbGccQ/exec', data)
